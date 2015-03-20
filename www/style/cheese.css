@@ -1,0 +1,1066 @@
+/* Free Cheese Group production */
+* {
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    height: 100%;
+    background-color: #eef3fa;
+    font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+    font-weight: bold;
+}
+button:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+a:hover { cursor: pointer; }
+button:hover:active { text-decoration: none; }
+img { border: 0; }
+.container {
+    width: 980px;
+    min-height: 100%;
+    position: relative;
+    margin: 0 auto;
+    background-color: white;
+}
+.header {
+    height: 75px;
+    position: relative;
+    overflow: hidden;
+    background-color: #ff8e49;
+}
+.header code {
+    font-size: 12px;
+    color: white;
+    font-weight: normal;
+    position: absolute;
+    left: 0;
+    width: 85%;
+    text-align: center;
+}
+.logo {
+    width: 125px;
+    height: 100%;
+    position: relative;
+    margin-left: 25px;
+    float: left;
+    cursor: pointer;
+    background: url(../images/logo.png) no-repeat center top;
+}
+.logoText {
+    width: 100%;
+    padding-top: 100%;
+    position: absolute;
+    bottom: 0;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+}
+.header button, .header a.social, .header .button, .profileData table button, .adminPanel table.adminTable button {
+    height: 25px;
+    padding: 0 5px;
+    border: 0;
+    margin: 45px 4px 0 0;
+    float: left;
+    background-color: #86abc4;
+    font-size: 12px;
+    color: white;
+}
+.header a.social {
+    margin: 5px;
+    width: 15px;
+}
+.header .button {
+    height: auto;
+    padding: 5px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.header .button:hover {
+    text-decoration: underline;
+}
+.check {
+    color: #000000 !important;
+    text-decoration: underline;
+    background-color: white !important;
+}
+.header button:active, .header .button:active, .raffleTopContent button:active, .newsTopContent button:active, .profileData table button:active { color: black !important; }
+.loginBlock {
+    float: right;
+    position: absolute;
+    top: 0;
+    right: 5px;
+    z-index: 1;
+}
+.loginBlock table {
+    text-align: center;
+    border-collapse: collapse;
+    border: 0;
+}
+.loginBlock table td { border: 0; }
+.loginBlock table .user {
+    height: 39px;
+    font-weight: normal;
+    overflow: hidden;
+    display: block;
+}
+.loginBlock table .user span, .loginBlock table .user a {
+    font-size: 12px;
+    display: inline;
+    float: none;
+}
+.loginBlock input {
+    width: 145px;
+    height: 23px;
+    margin: 0 5px;
+    padding: 0 5px;
+    border: 1px solid #86abc4;
+    outline: 0;
+    font-weight: bold;
+}
+.loginBlock input:focus { border: 1px solid black; }
+.loginBlock button {
+    width: 25px;
+    margin: 5px;
+}
+.loginBlock a {
+    display: block;
+    float: left;
+    clear: both;
+    font-size: 10px;
+    color: white;
+    text-decoration: none;
+}
+.loginBlock a:hover { text-decoration: underline; }
+.loginBlock a:active { color: black; }
+.loginBlock a:hover:active { text-decoration: none; }
+.social {background: url("../images/soc.png");}
+.twitter { background-position: 0 25px; }
+.vk { background-position: -25px 25px; }
+.facebook { background-position: -50px 25px; }
+.webdiscover { background-position: -75px 25px; }
+.instagram { background-position: -100px 25px; }
+.twitter:active { background-position: 0 0; }
+.vk:active { background-position: -25px 0; }
+.facebook:active { background-position: -50px 0; }
+.webdiscover:active { background-position: -75px 0; }
+.instagram:active { background-position: -100px 0; }
+.body {
+    position: relative;
+    margin: 5px;
+    overflow: hidden;
+    padding-bottom: 200px;
+}
+.aboutUs { position: relative; }
+.aboutUs textarea {
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+}
+.aboutUs p {
+    text-align: justify;
+    text-indent: 50px;
+    font-weight: normal;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.aboutUs p > a {
+    font-weight: bold;
+    color: #2387ca;
+    text-decoration: none;
+}
+.aboutUs p > a:hover {
+    text-decoration: underline;
+}
+.aboutUs p > a:active {
+    color: #63779c;
+}
+.aboutUs h1 {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.aboutUs h2, .registration h2 {
+    margin-bottom: 20px;
+}
+.aboutUs h1:first-child {
+    font-size: 22px;
+}
+.aboutUs > table.tableRaffles {
+    margin: 0 auto 25px;
+}
+.aboutUs > table.tableRaffles td {
+    font-size: 16px;
+    padding: 3px 10px;
+}
+.aboutUs > table.tableRaffles td.mail {
+    min-width: 300px;
+}
+.aboutUs > table.tableRaffles td.post {
+    min-width: 200px;
+}
+.rewrite {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 0;
+    background: transparent url(/images/red.png);
+}
+.right { float: right; }
+.left { float: left; }
+.clear { clear: both; }
+.bodyLeft {
+    width: 625px;
+    margin: 0 5px 0 0;
+    float: left;
+}
+.mainRaffle, .article {
+    min-height: 100px;
+    position: relative;
+    background-color: white;
+    margin-bottom: 5px;
+    overflow: hidden;
+}
+.mainRaffle iframe {
+    width: 100%;
+}
+.mainRaffle img {
+    margin: 25px;
+    max-width: 575px;
+}
+.aboutUs img {
+    margin: 15px 0;
+    max-width: 594px;
+}
+.mainRaffle p {
+    margin-bottom: 15px;
+}
+.mainRaffle span {
+    width: 95%;
+    display: block;
+    text-align: left;
+    font-weight: normal;
+    margin-bottom: 45px;
+    margin-left: 10px;
+}
+.mainRaffle span ul {
+    margin: 10px;
+}
+.mainRaffle span ul li {
+    margin: 5px;
+}
+.raffleTop, .raffleBottom, .newsTop, .newsBottom {
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    left: 0;
+    background-color: #ffcb32;
+    opacity: 0.9;
+}
+.raffleTop, .newsTop { top: 0; }
+.raffleBottom, .newsBottom { bottom: 0; }
+.raffleTopContent, .raffleBottomContent, .newsTopContent, .newsBottomContent {
+    margin: 8px 10px;
+    font-size: 20px;
+    color: white;
+    overflow: hidden;
+}
+.raffleTopContent a, .raffleBottomContent a, .newsTopContent a, .newsBottomContent a {
+    color: white;
+}
+.raffleTopContent a:hover, .raffleBottomContent a:hover, .newsTopContent a:hover, .newsBottomContent a:hover {
+    text-shadow: 1px 1px 10px white;
+}
+.raffleTopContent button, .newsTopContent button {
+    float: right;
+    height: 20px;
+    margin: 2px;
+    padding: 0 8px;
+    border: 0;
+    background-color: #ff8e49;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+}
+.raffleBottomContent, .newsBottomContent {float: right;}
+.raffleTopContent > span, .raffleBottomContent > span {
+    display: inline;
+    font-weight: bold !important;
+    margin-bottom: 0;
+    overflow: hidden;
+}
+.videoBlock {
+    margin-bottom: 5px;
+}
+.videoBlock iframe {
+    width: 100%;
+}
+.bodyRight {
+    width: 340px;
+    float: right;
+}
+.colorHeader {
+    margin-bottom: 5px;
+    padding: 8px 0;
+    text-align: center;
+    clear: both;
+}
+.green {background-color: #86abc4;}
+.greenLight {background-color: #4f675a;}
+.blue {background-color: #86abc4;}
+.blueLight {background-color: #63779c;}
+.red {background-color: #bf0221;}
+.redLight {background-color: #b85868;}
+.orange {background-color: #ff8e49;}
+.yellow {background-color: #ffcb32 !important;}
+.colorHeader span, .colorHeader h1 {
+    font-size: 20px;
+    color: white;
+}
+.colorHeader span > a, .colorHeader h1 > a {
+    text-decoration: none;
+    color: white;
+}
+.colorHeader span > a:hover, .colorHeader h1 > a:hover {
+    text-shadow: 1px 1px 10px white;
+}
+.subCount {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.countPlace {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+.countPlace > span {
+    display: block;
+    float: left;
+    margin-top: 80px;
+    font-size: 12px;
+    margin-left: 2px;
+}
+.count {
+    float: left;
+    padding: 20px 6px;
+    margin: 1px;
+    border: 1px solid #535353;
+    border-radius: 3px;
+    background: #f5f5f5;
+    background: -moz-linear-gradient(top,  #f5f5f5 0%, #cacaca 50%, #000000 51%, #fefefe 52%, #cacaca 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f5f5f5), color-stop(50%,#cacaca), color-stop(51%,#000000), color-stop(52%,#fefefe), color-stop(100%,#cacaca));
+    background: -webkit-linear-gradient(top,  #f5f5f5 0%,#cacaca 50%,#000000 51%,#fefefe 52%,#cacaca 100%);
+    background: -o-linear-gradient(top,  #f5f5f5 0%,#cacaca 50%,#000000 51%,#fefefe 52%,#cacaca 100%);
+    background: -ms-linear-gradient(top,  #f5f5f5 0%,#cacaca 50%,#000000 51%,#fefefe 52%,#cacaca 100%);
+    background: linear-gradient(to bottom,  #f5f5f5 0%,#cacaca 50%,#000000 51%,#fefefe 52%,#cacaca 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f5f5', endColorstr='#cacaca',GradientType=0 );
+}
+.count span {
+    font-size: 42px;
+}
+.attention {
+    display: block;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.attention span {
+    font-weight: bold;
+}
+.part {
+    position: relative;
+    text-align: center;
+}
+.partButton {
+    width: 100%;
+    margin-bottom: 5px;
+}
+.partButton button, .inviteButton {
+    margin: 10px;
+    padding: 20px 50px;
+    font-size: 28px;
+    border: 1px solid #535353;
+    border-radius: 2px;
+    background: #cacaca;
+    background: -moz-linear-gradient(top,  #cacaca 0%, #f5f5f5 49%, #fefefe 52%, #cacaca 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cacaca), color-stop(49%,#f5f5f5), color-stop(52%,#fefefe), color-stop(100%,#cacaca));
+    background: -webkit-linear-gradient(top,  #cacaca 0%,#f5f5f5 49%,#fefefe 52%,#cacaca 100%);
+    background: -o-linear-gradient(top,  #cacaca 0%,#f5f5f5 49%,#fefefe 52%,#cacaca 100%);
+    background: -ms-linear-gradient(top,  #cacaca 0%,#f5f5f5 49%,#fefefe 52%,#cacaca 100%);
+    background: linear-gradient(to bottom,  #cacaca 0%,#f5f5f5 49%,#fefefe 52%,#cacaca 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cacaca', endColorstr='#cacaca',GradientType=0 );
+}
+.partButton button {
+    margin: 10px 0;
+    padding: 0;
+    width: 100%;
+    height: 70px;
+}
+.inviteButton {
+    padding: 20px 0;
+    font-size: 22px;
+    width: 45%;
+}
+.secondaryRaffles {
+    position: relative;
+    overflow: hidden;
+}
+.secondaryRaffles .raffleTopContent span, .newsTopContent span {
+    max-width: 259px;
+    height: 18px;
+    overflow: hidden;
+    display: block;
+    float: left;
+}
+.secondaryRaffles .raffleTopContent button, .newsTopContent button {
+    float: right;
+}
+.newsBlock > .news:nth-child(even) {
+    float: right;
+}
+.newsBlock > .news:nth-child(odd) {
+    clear: both;
+}
+.news {
+    min-height: 100px;
+    position: relative;
+    background-color: white;
+    overflow: hidden;
+    width: 49%;
+    margin: 0 0.5% 5px 0.5%;
+    float: left;
+}
+.news span {
+    display: block;
+    margin-bottom: 40px;
+    float: left;
+    font-weight: normal;
+    clear: both;
+}
+.news img {
+    margin: 25px 0 0;
+    width: 100%;
+    float: left;
+    clear: both;
+}
+.newsNavigator {
+    clear: both;
+    text-align: center;
+    padding-top: 10px;
+    font-weight: normal;
+}
+.newsNavigator * {
+    margin: 0 5px;
+    font-weight: bold;
+}
+.secondaryRaffles > .oneRaffle:nth-child(odd) > .raffleBottom > .raffleBottomContent, .newsBlock > .oneNews:nth-child(odd) > .newsBottom > .newsBottomContent { float: left; }
+.oneRaffle {
+    min-height: 60px;
+    position: relative;
+    margin-bottom: 5px;
+}
+.oneRaffle > .raffleTop, .oneRaffle > .raffleBottom {
+    height: 25px;
+    background-color: #86abc4;
+}
+.oneRaffle > .raffleTop > .raffleTopContent, .oneRaffle > .raffleBottom > .raffleBottomContent, .oneNews > .newsTop > .newsTopContent, .oneNews > .newsBottom > .newsBottomContent {
+    margin: 5px;
+    font-size: 14px;
+}
+.oneRaffle > .raffleTop > .raffleTopContent button, .oneNews > .newsTop > .newsTopContent button {
+    height: 15px;
+    margin: 0 2px;
+    font-size: 9px;
+}
+.oneRaffle img, .oneNews img {
+    margin: 15px 0;
+    width: 100%;
+}
+.bodyRight .newsBlock {
+    width: 100%;
+}
+.newsBlock, .articleBlock {
+    position: relative;
+    overflow: hidden;
+}
+.oneNews {
+    min-height: 100px;
+    position: relative;
+    margin-bottom: 5px;
+}
+.newsTop, .newsBottom {
+    height: 25px;
+    background-color: #63779c;
+}
+.advertising {
+    text-align: center;
+}
+.advertising .newsTop, .advertising .newsBottom {
+    background-color: #90636a;
+    text-align: left;
+}
+.footer {
+    height: 150px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #86abc4;
+    overflow: hidden;
+}
+.footer span {
+    display: block;
+    width: 100%;
+    position: absolute;
+    bottom: 5px;
+    text-align: center;
+    color: white;
+    font-weight: normal;
+    font-size: 12px;
+}
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer a:active {
+    color: black;
+}
+.footer span:first-child {
+    top: 10px;
+}
+.footer span:first-child > ul li {
+    display: inline-block;
+    width: 10%;
+    vertical-align: top;
+    font-size: 14px;
+    font-weight: bold;
+}
+.footer span:first-child > ul li > ul li {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    font-size: 12px;
+    font-weight: normal;
+}
+.inviteMask {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1;
+}
+.inviteBlock {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 1000;
+    margin: -105px 0px 0px -225px;
+    width: 450px;
+    height: 210px;
+    background-color: white;
+    border: 1px solid #000000;
+}
+.inviteContent {
+    margin: 5px;
+}
+.inviteContent > span {
+    font-weight: normal;
+    font-size: 18px;
+    display: block;
+    text-align: center;
+    padding: 0 5px;
+}
+.inviteBlock table {
+    width: 100%;
+    position: relative;
+    margin-top: 5px;
+}
+.inviteBlock table td:first-child {
+    width: 25%;
+}
+.inviteBlock table td {
+    width: 75%;
+    position: relative;
+    font-size: 25px;
+}
+.inviteBlock table td input {
+    width: 100%;
+    height: 100%;
+    float: right;
+    font-size: 22px;
+}
+.registration, .profile {
+    margin: 0 20px 15px;
+    padding: 20px 0;
+    border: 1px solid #63779c;
+}
+.registration table {
+    width: 850px;
+    margin: 0 auto;
+    font-weight: normal;
+}
+.registration table tr > td.error {
+    width: 20%;
+    padding: 0 5px;
+    color: red;
+}
+.registration table tr > td:first-child {
+    width: 30%;
+}
+.registration table td {
+    width: 50%;
+    position: relative;
+}
+.registration table td > input {
+    width: 99%;
+}
+.registration table td > input.userLocation, .registration table td > select {
+    width: 49%;
+    float: right;
+}
+.registration table td > select {
+    float: left;
+}
+.registration h2 {
+    font-size: 18px;
+    margin-left: 20px;
+}
+.registrationButton {
+    float: right;
+    margin-right: 20px;
+}
+.adminPanel {
+    clear: both;
+    overflow: hidden;
+}
+.adminPanel .colorHeader {
+    cursor: pointer;
+}
+.postArea {
+    width: 99% !important;
+    min-width: 99% !important;
+    max-width: 99% !important;
+    font-size: 12px !important;
+    height: 100px;
+}
+.adminPanel table.adminTable {
+    width: 100%;
+}
+.adminPanel table iframe, .adminPanel table img {
+    width: 205px;
+    height: 200px;
+}
+.adminPanel table.adminTable button {
+    width: 100%;
+    margin: 0 0 5px;
+}
+.adminEventDate {
+    min-width: 70px;
+}
+.adminPanel table.adminTable tbody tr:nth-child(even) td {
+    background-color: #ddd;
+}
+.adminPanel table.adminTable td, table.tableRaffles td {
+    font-weight: normal !important;
+    font-size: 12px;
+    text-align: center !important;
+    padding: 2px;
+}
+table.tableRaffles td {
+    font-size: 12px;
+}
+.adminPanel table.adminTable td input, .adminPanel table.adminTable td textarea, .adminPanel table.adminTable td select {
+    font-weight: normal;
+    font-size: 10px;
+    margin-bottom: 5px;
+}
+.adminPanel table.adminTable td textarea {
+    font-size: 12px;
+    height: 100%;
+}
+.adminPanel table.adminTable td textarea {
+    width: 96%;
+    max-width: 96%;
+    min-width: 96%;
+}
+.adminPanel table.adminTable thead td, table.tableRaffles thead td {
+    background-color: #86abc4;
+    font-weight: bold !important;
+    font-size: 12px;
+}
+.tableRaffles a {
+    text-decoration: underline;
+}
+.profile {
+    overflow: hidden;
+    margin: 10px;
+    padding: 20px;
+}
+.profileAvatar {
+    position: relative;
+    padding: 4px 4px 0 4px;
+    float: left;
+    border: 4px double black;
+}
+.profileAvatar > div.userTwit {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    font-weight: normal;
+    font-style: italic;
+    margin-top: 5px;
+}
+div.userTwit textarea {
+    min-width: 75%;
+    max-width: 75%;
+    width: 75%;
+    float: left;
+}
+.profileAvatar > img {
+    width: 150px;
+    max-height: 300px;
+}
+.profileData {
+    width: 685px;
+    float: right;
+    text-align: center;
+}
+.profileData table {
+    max-width: 690px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.profileData table button, .profileData table input {
+    width: 100%;
+}
+.profileName {
+    display: block;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+.profileName > span {
+    font-weight: bold;
+}
+.profileData table td {
+    padding: 5px;
+    text-align: left;
+    font-weight: bold;
+}
+.profileData table td:nth-child(odd) {
+    font-weight: normal;
+}
+.profileData table button {
+    margin: 0;
+}
+.blog span {
+    overflow: hidden;
+    display: block;
+    width: 95%;
+    margin: 0 auto 5px;
+    padding: 5px;
+    border: 1px solid gray;
+}
+.blogHeader {
+    color: white;
+    padding: 5px 0;
+}
+.aboutUs.blog p.blogHeader {
+    cursor: pointer;
+}
+.usersBlock {
+    overflow: hidden;
+}
+.oneUser {
+    border: 1px solid black;
+    float: left;
+    padding: 5px;
+    margin: 0 2px 5px;
+    width: 91px;
+    height: 103px;
+    text-align: center;
+    overflow: hidden;
+}
+.oneUser img {
+    max-width: 75px;
+    max-height: 75px;
+}
+.oneUser span {
+    margin-top: 0;
+    display: block;
+    font-size: 12px;
+}
+.oneUserAva {
+    position: relative;
+    padding: 4px 4px 0 4px;
+    border: 4px double black;
+    display: table-cell;
+    width: 75px;
+    height: 79px;
+    vertical-align: middle;
+}
+.oneUserAva .userRank {
+    width: 22px;
+    height: 22px;
+    font-size: 18px;
+}
+.commentsBlock {
+    overflow: hidden;
+}
+.oneComment {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid black;
+    padding-bottom: 22px;
+    margin-bottom: 5px;
+    clear: both;
+}
+.oneComment * {
+    margin: 5px;
+}
+.oneComment span > a {
+    margin: 0;
+}
+.oneComment button {
+    background-color: #86abc4;
+    border: 1px solid black;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 2px 5px;
+    color: white;
+    font-weight: bold;
+}
+.oneComment .answerButton {
+    bottom: 0;
+    top: inherit;
+}
+.answerComment {
+    width: 550px;
+    float: right;
+}
+.answerComment .userComment {
+    width: 440px;
+}
+.userAvatar {
+    float: left;
+    border: 4px double black;
+    text-align: center;
+    position: relative;
+}
+.userAvatar img {
+    max-width: 70px;
+    max-height: 110px;
+    margin-bottom: 2px;
+}
+.userAvatar a {
+    margin: 0;
+    font-size: 15px;
+}
+.userAvatar span {
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    margin: 3px 0 0;
+}
+.userComment {
+    font-weight: normal;
+    float: right;
+    width: 510px;
+}
+.dateComment {
+    display: block;
+    font-weight: bold;
+}
+.newCommentBlock {
+    position: relative;
+    text-align: center;
+    font-weight: normal;
+    padding: 0 4px;
+}
+.newCommentBlock textarea {
+    min-width: 100%;
+    max-width: 100%;
+    width: 100%;
+    height: 50px;
+}
+.newCommentBlock button {
+    margin-top: 0;
+}
+.article img {
+    border: 0;
+    float: left;
+    width: 100%;
+    max-height: 350px;
+    margin: 10px;
+}
+.article table {
+    border: 0;
+    width: 100%;
+}
+.article table td {
+    vertical-align: top;
+    max-width: 50%;
+}
+.article table td:first-child {
+    max-width: 70%;
+    min-width: 50%;
+    width: 50%;
+}
+.articlePreview {
+    display: block;
+    margin: 42px 2%;
+    font-weight: normal;
+}
+.articleContent img {
+    margin: 0;
+    max-width: 595px;
+}
+.achievements {
+    width: 16px;
+    height: 16px;
+    margin: 2px;
+    background-color: green;
+    cursor: pointer;
+    border-radius: 8px;
+    position: relative;
+    float: left;
+    text-align: center;
+    font-weight: normal;
+    font-size: 14px;
+}
+.achievements span, .userRank span {
+    display: none;
+    background-color: white;
+    color: black;
+    overflow: hidden;
+    padding: 5px;
+    min-width: 140px;
+    width: 200px;
+    border: 1px solid black;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    font-size: 15px;
+    font-weight: normal;
+    z-index: 1;
+}
+.achievements:hover span, .userRank:hover span {
+    display: block;
+}
+.userRank {
+    background-color: red;
+    color: white;
+    position: absolute;
+    bottom: 4px;
+    right: 4px;
+    margin: 0;
+    cursor: pointer;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 20px 20px 0 20px;
+    font-size: 24px;
+    font-weight: bold;
+    float: left;
+    text-align: center;
+}
+.userRankAll {
+    background-color: red;
+    color: white;
+    position: relative;
+    margin: -34px -4px 0;
+    cursor: pointer;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 20px 20px 0 20px;
+    font-size: 24px;
+    font-weight: bold;
+    float: right;
+    text-align: center;
+}
+.userRank span {
+    width: 250px;
+    top: 30px;
+    left: 30px;
+}
+.unreadComment {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 340px;
+    height: 113px;
+}
+.unreadBackground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.7;
+}
+.unreadComment .userAvatar {
+    margin: 2px;
+    background-color: white;
+    width: 85px;
+    float: left;
+}
+.unreadComment .userAvatar img {
+    max-width: 70px;
+    max-height: 70px;
+    margin: 4px 4px 0 4px;
+}
+.unreadMessageBlock {
+    float: right;
+    text-align: center;
+    position: relative;
+    width: 235px;
+    height: 100%;
+    color: white;
+    margin: 5px 5px 0 0;
+}
+.unreadMessageBlock h2 {
+    font-size: 15px;
+}
+.unreadMessageBlock span {
+    font-size: 12px;
+    font-weight: normal;
+    margin: 10px 0;
+}
+.unreadComment .userAvatar span {
+    background-color: white;
+    border: 4px double black;
+    border-top: 1px solid black;
+    left: -4px;
+}
+.unreadMessageBlock .inviteButton {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 5px 0;
+    color: black;
+    font-weight: normal;
+    position: absolute;
+    bottom: 10px;
+}
+.unreadMessageBlock .inviteButton:hover {
+    text-decoration: underline;
+}
+.commentPreview a {
+    color: white;
+}

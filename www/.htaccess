@@ -1,0 +1,17 @@
+AddDefaultCharset utf-8
+ErrorDocument 404 http://free-cheese.com/404
+ErrorDocument 403 http://free-cheese.com/403
+ErrorDocument 301 http://free-cheese.com/301
+Options +FollowSymLinks
+Options -Indexes
+RewriteEngine on
+RewriteRule ^index.php$ / [QSA,R]
+RewriteRule ^index$ / [QSA,R]
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.html\ HTTP/
+RewriteRule ^index\.html$ http://free-cheese.com/ [L]
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule (.*)$ $1.php
+RewriteCond %{HTTP_HOST} ^www.free-cheese.com
+RewriteRule (.*) http://free-cheese.com/$1
+AddHandler application/x-httpd-php .html
